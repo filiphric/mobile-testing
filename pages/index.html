@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+      background-color: #282a3a;
+      font-family: sans-serif;
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      grid-template-rows: 10% auto;
+      align-items: center;
+      justify-items: center;
+      align-content: center;
+      height: 100vh;
+      color: aliceblue;
+    }
+    h1 {
+      margin: 30px;
+      padding-bottom: 30px;
+      grid-column-start: span 3;
+    }
+    div {
+      margin: 10px;
+      font-size: 20px;
+      grid-column-start: span 3;
+      color: white;
+      padding: 10px;
+    }
+    #narrow {
+      display: none;
+    }
+    @media only screen and (max-width: 520px) {
+      #narrow {
+        display: block;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <h1>You are viewing this page on:</h1>
+  <div id="mobile" style="display: none;">📱  a mobile</div>
+  <div id="desktop" style="display: none;">💻  a computer</div>
+  <div id="touch" style="display: none;">👆  and it’s a touch device!</div>
+  <div id="narrow">😬  it’s getting pretty narrow here</div>
+</body>
+<script src="app.js" ></script>
+</html>
